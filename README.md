@@ -111,6 +111,27 @@ Adaptez ces deux valeurs à votre nom d'hôte :
 - `hostname` est le nom d'hôte interne du conteneur ;
 - `external_url` est l'adresse publique utilisée par GitLab pour générer les liens et les URL de clonage.
 
+Pour un homelab local, vous pouvez par exemple utiliser `git.homelab.local` à la place de `git.example.com` :
+
+```yaml
+hostname: git.homelab.local
+external_url "http://git.homelab.local:8080"
+```
+
+Le nom indiqué dans `external_url` doit être résolu par le navigateur et le client Git. Il n'est pas nécessaire d'utiliser un DNS public pour un test : vous pouvez utiliser un DNS local ou ajouter une entrée dans le fichier `/etc/hosts` de chaque poste client.
+
+Par exemple, sur un poste Linux, ajoutez une ligne contenant l'adresse IP de votre serveur :
+
+```text
+ADRESSE_IP_DU_SERVEUR git.example.com
+```
+
+Pour le choix homelab, utilisez à la place :
+
+```text
+ADRESSE_IP_DU_SERVEUR git.homelab.local
+```
+
 ### Volumes
 
 Les volumes conservent les données en dehors du conteneur :
