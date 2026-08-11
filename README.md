@@ -15,7 +15,7 @@ Cette configuration convient à un VPS Linux ou à un homelab. Elle constitue un
 
 Cette page sert de support à la vidéo YouTube associée.
 
-- YouTube : lien à ajouter
+- YouTube : [Installer Gitlab dans Docker avec Docker Compose](https://youtu.be/Ik7sS_qr6WM)
 - LinkedIn : [me suivre sur LinkedIn](https://www.linkedin.com/in/dominique-korzeczek-695033188)
 
 ## Prérequis
