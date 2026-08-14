@@ -350,9 +350,15 @@ git clone ssh://git@git.example.com:2222/yeswecode/test.git test-ssh
 
 ## Aller plus loin
 
-Une fois GitLab accessible, vous pouvez :
+### Passer GitLab derrière NGINX et HTTPS
 
-- placer l'instance derrière NGINX avec HTTPS ;
-- créer un runner GitLab pour exécuter les jobs CI/CD ;
-- configurer des sauvegardes régulières ;
-- créer des groupes et organiser les projets par équipe ou par application.
+Pour placer cette instance GitLab derrière NGINX, activer HTTPS avec Let's Encrypt et supprimer l'accès web direct sur le port `8080`, consultez le guide [Configurer GitLab derrière NGINX avec Docker Compose](https://github.com/YesWeCodeFr/gitlab-nginx-reverse-proxy-docker-compose).
+
+### Mettre en place la CI/CD
+
+Créez un runner GitLab pour exécuter les jobs CI/CD.
+
+### Administrer l'instance GitLab
+
+- Configurez des sauvegardes régulières.
+- Créez des groupes et organisez les projets par équipe ou par application.
